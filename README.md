@@ -77,7 +77,7 @@ Nesta etapa, nosso objetivo é colocar em prática os fundamentos de **HTML5 e C
 |---|---|
 | Gabrielly Macario de Souza Ribeiro | RM575133 |
 | Maria Luiza de Castro | RM575122 |
-| Rayza Salles Almeida | RM576940 |
+| Rayza Salles Almeida do Nascimento | RM576940 |
 | Sofia Balieiro Yamane Caro | RM574510 |
 | Taiane Mirella Santos de Alcântara | RM575845 |
 
