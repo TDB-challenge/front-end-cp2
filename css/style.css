@@ -222,3 +222,140 @@ summary:focus-visible {
   text-decoration: underline; /* não depende só da cor */
 }
 
+/* CONTEÚDO */
+.painel {
+  margin-top: 1rem;
+  padding: 2rem 1.5rem;
+  border-radius: 1.2rem;
+  background-color: var(--cor-fundo);
+}
+
+.conteudo {
+  padding: 3rem 0;
+}
+ 
+.intro {
+  margin: 1rem 0 2rem;
+}
+
+.divisor {
+  margin: 2.4rem 0;
+  border: 0;
+  border-top: 1px solid var(--cor-cartao);
+}
+
+.destaque {
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+ 
+.destaque h3 {
+  margin-bottom: 0.8rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+ 
+.destaque img {
+  width: 100%;
+  max-width: 22rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.sobre {
+  padding: 2.4rem 2rem;
+  border-radius: 1.6rem;
+  color: var(--cor-clara);
+  background-color: var(--cor-primaria);
+}
+ 
+.coluna {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+ 
+.beneficios li {
+  margin-bottom: 1.6rem;
+}
+ 
+.icone {
+  display: inline-block;
+  width: 15%;
+  font-size: 2.4rem;
+  vertical-align: top;
+}
+ 
+.beneficio-texto {
+  display: inline-block;
+  width: 80%;
+  vertical-align: top;
+}
+ 
+.beneficio-texto h3 {
+  font-size: 1.7rem;
+}
+ 
+.beneficio-texto p {
+  margin-bottom: 0;
+  font-size: var(--fs-pequeno);
+}
+
+.espacos {
+  margin-top: 3rem;
+}
+ 
+.espacos img {
+  width: 100%;
+  max-width: 30rem;
+  margin: 1rem 0;
+  border-radius: 1.6rem;
+}
+ 
+.legenda {
+  font-size: var(--fs-pequeno);
+}
+ 
+.acordeao details {
+  margin-bottom: 1rem;
+  padding: 1.2rem 1.6rem;
+  border-radius: 1.2rem;
+  background-color: var(--cor-cartao);
+}
+ 
+.acordeao summary {
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: bold;
+  list-style: none;
+}
+ 
+.acordeao summary::-webkit-details-marker {
+  display: none;
+}
+ 
+.acordeao summary::after {
+  content: "+";
+  float: right;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 0.2rem solid var(--cor-texto);
+  border-radius: 50%;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  text-align: center;
+}
+ 
+.acordeao details[open] summary::after {
+  content: "−";
+}
+ 
+.acordeao details p {
+  margin: 0.8rem 0;
+  font-size: 1.5rem;
+}
+ 
+.acordeao details a {
+  font-size: var(--fs-pequeno);
+}
+
