@@ -20,14 +20,14 @@ RM575845-TAIANE MIRELLA SANTOS DE ALCÂNTARA
 <body>
     <header class="cabecalho">
         <!-- CABECALHO -->
-         <div>
-            <h1>Home</h1>
+         <div class="titulo">
+            <h1>Conecta campus</h1>
             <p>Explore tudo o que seu campus tem a oferecer!</p>
             <nav class="menu">
                 <ul>
-                    <li><a href="./integrantes.html">Integrantes</a></li>
                     <li><a href="./locais.html">Locais</a></li>
-                    <li><a href="./detalhes.html">Detalhes</a></li>
+                    <li><a href="./detalhes.html">Atividades</a></li>
+                    <li><a href="./integrantes.html">Integrantes</a></li>
                 </ul>
             </nav>
          </div>
@@ -35,39 +35,123 @@ RM575845-TAIANE MIRELLA SANTOS DE ALCÂNTARA
 
     <main>
         <!-- CONTEUDO PRINCIPAL -->
-        <section class="conteudo-principal">
-            <h2>Bem-vindo ao Conecta Campus</h2>
+        <section class="sobre linha" id="sobre">
+    <div class="coluna">
+        <h2>O que é o Conecta Campus?</h2>
 
-            <span>
-                <p>O Conecta Campus é uma plataforma inovadora que visa facilitar a comunicação e a interação entre estudantes, professores e funcionários dentro do ambiente universitário. Aqui, você encontrará informações sobre eventos, notícias, recursos acadêmicos e muito mais.</p>
-            </span>
-        </section>
+        <p>
+            O Conecta Campus é uma plataforma inovadora que visa facilitar a comunicação e a interação entre estudantes, professores e funcionários dentro do ambiente universitário. Aqui, você encontrará informações sobre eventos, notícias, recursos acadêmicos e muito mais.
+        </p>
 
-        <section class="especificação_campus">
-            <h2>Nosso Campus</h2>
-            <p>Seu próximo passo começa aqui! Conheça oportunidades que impulsionam seu desenvolvimento.</p>
+        <p>
+            Mais do que um guia universitário, nosso objetivo é
+            facilitar o acesso a informações sobre espaços,
+            serviços, eventos e atividades extracurriculares,
+            proporcionando uma experiência acadêmica mais
+            completa, prática e conectada.
+        </p>
+    </div>
 
-            <div class="card">
-              <h3>Biblioteca</h3>
-                <p>A biblioteca do nosso campus oferece uma vasta coleção de livros, periódicos e recursos digitais para apoiar o aprendizado e a pesquisa dos estudantes.</p>
-                <img src="./img/img-n_biblioteca.jpeg" alt="Biblioteca do campus">
-                
-                <h3>Laboratórios</h3>
-                <p>Nossos laboratórios são equipados com tecnologia de ponta, proporcionando um ambiente ideal para experimentação e desenvolvimento de projetos acadêmicos.</p>
-                <img src="./img/img-n_laboratorio.jpeg" alt="Laboratório">
+    <div class="coluna">
+        <h2>Por que utilizar?</h2>
 
-                <h3>Centro de convivência</h3>
-                <p>O centro de convivência é um espaço colaborativo onde estudantes e professores podem se reunir para discussões, encontros e atividades extracurriculares.</p>
-                <img src="./img/img-n_convivencia.png" alt="Centro de convivencia">
-            </div>
-        </section>
+        <ul class="beneficios">
+            <li>
+                <h3>Explore seu campus</h3>
+                <p>Conheça os espaços e recursos disponíveis.</p>
+            </li>
+            <li>
+                <h3>Descubra oportunidades</h3>
+                <p>Acompanhe eventos e atividades extracurriculares.</p>
+            </li>
+            <li>
+                <h3>Viva a universidade</h3>
+                <p>Aproveite experiências além da sala de aula.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="espacos linha" id="espacos">
+    <div class="coluna">
+        <h2>Espaços pensados para sua jornada acadêmica</h2>
+
+        <p>
+            Conheça os espaços que fazem parte da sua
+            experiência na universidade.
+        </p>
+
+        <img
+            src="./img/campus_aberto.jpg"
+            alt="Vista do campus universitário"
+        >
+
+        <p class="legenda">
+            Conheça um pouco do nosso campus e tudo o que
+            ele oferece para você.
+        </p>
+    </div>
+
+    <div class="coluna acordeao">
+        <details open>
+            <summary>1. Biblioteca</summary>
+            <p>
+                Um espaço completo para seus estudos, com livros,
+                áreas de leitura, computadores e muito mais.
+            </p>
+            <a href="./detalhes.html">Saiba mais →</a>
+        </details>
+
+        <details>
+            <summary>2. Atividades</summary>
+            <p>
+                Descubra atividades para aprender e interagir
+                com outros estudantes.
+            </p>
+            <a href="./locais.html"> Explore as atividades</a>
+        </details>
+
+        <details>
+            <summary>3. Laboratórios</summary>
+            <p>
+                Conheça os espaços para aulas práticas
+                e desenvolvimento de projetos.
+            </p>
+        </details>
+
+        <details>
+            <summary>4. Eventos</summary>
+            <p>
+                Acompanhe os encontros e eventos da universidade.
+            </p>
+        </details>
+    </div>
+</section>
     </main>
 
-    <footer class="rodape">
-        <!-- RODAPE -->
-        <p>&copy; Conecta Campus 2026</p>
-        <p>Challenge 2 · Front-End Design Engineering</p>
-    </footer>
+<footer class="rodape">
+    <div class="rodape-container">
+        <a class="rodape-logo" href="./index.html">
+            <strong>CONECTA</strong>
+            <span>campus</span>
+        </a>
+
+        <p class="rodape-descricao">
+            Explore espaços, descubra recursos e viva experiências
+            além da sala de aula.
+        </p>
+
+        <nav aria-label="Links do rodapé">
+            <ul class="rodape-links">
+                <li><a href="./index.html#eventos">Buscar Eventos</a></li>
+                <li><a href="./locais.html">Conhecer Laboratórios</a></li>
+                <li><a href="./detalhes.html">Explorar biblioteca</a></li>
+                <li><a href="./index.html#atividades">Ir para atividades</a></li>
+            </ul>
+        </nav>
+
+        <p class="rodape-copyright">© 2026 Conecta Campus</p>
+    </div>
+</footer>
     
 </body>
 </html>
