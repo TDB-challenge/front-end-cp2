@@ -572,6 +572,216 @@ body > .cabecalho-home {
 
 /* Rodapé */
 body > .rodape {
+    margin-inline: -1rem;
+    padding: 40px 23px;
+    background-color: #00110b;
+    color: #fff2e6;
+    text-align: center;
+}
+
+.rodape-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rodape-descricao {
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+/* Links do rodapé */
+.rodape-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rodape-links li {
+  display: inline-block;
+  margin: 8px;
+}
+
+.rodape-links a {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 30px;
+  background-color: #53605b;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.rodape-links a:hover {
+  background-color: #6b7972;
+  text-decoration: none;
+}
+
+/* Linha e direitos autorais */
+.rodape .rodape-copyright {
+  margin-top: 35px;
+  margin-bottom: 0;
+  padding-top: 24px;
+  border-top: 1px solid #d7dfd9;
+  text-align: left;
+  font-size: 16px;
+}
+
+
+
+
+/* --------------------------------------------------------- */
+/* PAGINA LOCAIS */
+
+/* INTRODUCAO */
+
+.pagina-locais .titulo-pagina {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.pagina-locais .titulo-pagina > p:first-child {
+    margin-bottom: 1rem;
+    font-family: var(--fonte-interface);
+    font-size: var(--fs-menu);
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+.pagina-locais .titulo-pagina h2 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.pagina-locais .titulo-pagina > p:last-child {
+    font-size: var(--fs-base);
+}
+
+/* ESPACOS DO CAMPUS */
+
+.pagina-locais .local {
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--cor-cartao);
+}
+
+.pagina-locais .local:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+/* TITULOS E SUBTITULOS */
+
+.pagina-locais .local h3 {
+    margin-bottom: 0.5rem;
+    font-size: 2.6rem;
+}
+
+.pagina-locais .local > p {
+    margin-bottom: 1.5rem;
+    font-size: var(--fs-base);
+}
+
+/* IMAGENS */
+
+.pagina-locais .local-imagem {
+    width: 100%;
+    height: 28rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+/* BLOCOS DE INFORMACOES */
+
+.pagina-locais .local-informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* DESCRICAO */
+
+.pagina-locais .local-descricao {
+    padding: 2rem;
+    border-radius: 1rem;
+    color: var(--cor-clara);
+    background-color: var(--cor-primaria);
+}
+
+.pagina-locais .local-descricao h4 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+/* INFORMACOES UTEIS */
+
+.pagina-locais .local-dados {
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: var(--cor-cartao);
+}
+
+.pagina-locais .local-dados h4 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.pagina-locais .local-dados p {
+    margin-bottom: 1rem;
+}
+
+.pagina-locais .local-dados a {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+.pagina-locais .local-dados a:hover {
+    text-decoration: underline;
+}
+}
+
+.linha > .coluna {
+  width: 50%;
+  min-width: 0;
+  margin-bottom: 0;
+}
+
+/* Apresentação do Conecta Campus */
+.sobre {
+  padding: 30px;
+}
+
+.sobre h2 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.coluna-beneficios {
+  border-left: 1px solid #ffffff;
+  padding-left: 30px;
+}
+
+/* Benefícios */
+.beneficios {
+  margin-top: 24px;
+}
+
+.beneficios p {
+  font-size: 14px;
+}
+
+/* Imagem do campus */
+.espacos img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+/* Rodapé */
+body > .rodape {
   margin-left: -23px;
   margin-right: -23px;
   padding: 40px 23px;
