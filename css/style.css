@@ -114,4 +114,88 @@ summary:focus-visible {
   vertical-align: top;
 }
 
+/* CABEÇALHO */
+.moldura {
+  padding: 1rem;
+  background-color: var(--cor-moldura);
+}
+
+.cabecalho {
+  color: var(--cor-clara);
+}
+
+.cabecalho-interno {
+  padding: 1.6rem 0;
+  background-color: var(--cor-primaria);
+}
+
+.hero {
+  padding: 2rem 0 3rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../img/campus.jpg") center / cover no-repeat;
+}
+
+.barra {
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-family: var(--fonte-interface);
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--cor-clara);
+}
+
+.logo span {
+  font-weight: normal;
+}
+
+.hero-texto {
+  width: 92%;
+  max-width: 45rem;
+  margin: 4rem auto 2rem;
+}
+
+.hero-texto h1 {
+  margin-bottom: 1.2rem;
+  font-weight: normal;
+}
+
+.hero-texto p {
+  font-family: var(--fonte-interface);
+  font-size: 1.4rem;
+}
+
+.botao {
+  display: inline-block;
+  padding: 0.8rem 2.4rem;
+  border: 1px solid var(--cor-clara);
+  border-radius: 0.8rem;
+  font-family: var(--fonte-interface);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--cor-clara);
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.botao:hover {
+  background-color: rgba(255, 255, 255, 0.45);
+  text-decoration: none;
+}
+
+.botao-escuro {
+  margin-top: 2rem;
+  background-color: var(--cor-primaria);
+}
+
+.botao-escuro:hover {
+  background-color: var(--cor-moldura);
+}
 
