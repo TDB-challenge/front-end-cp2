@@ -609,3 +609,138 @@ body > .rodape {
         font-size: 15px;
     }
 }
+
+
+
+
+
+/* --------------------------------------------------------- */
+
+/* PAGINA LOCAIS */
+
+/* TITULO E INTRODUCAO */
+
+.pagina-locais .titulo-pagina {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.pagina-locais .etiqueta {
+    margin-bottom: 1rem;
+    font-family: var(--fonte-interface);
+    font-size: var(--fs-menu);
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+.pagina-locais .titulo-pagina h2 {
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+}
+
+.pagina-locais .introducao-locais {
+    font-size: var(--fs-base);
+}
+
+/* ESPACOS DO CAMPUS */
+
+.pagina-locais .local {
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid var(--cor-cartao);
+}
+
+.pagina-locais .local:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+/* TITULOS E SUBTITULOS */
+
+.pagina-locais .local-cabecalho {
+    margin-bottom: 2rem;
+}
+
+.pagina-locais .local-cabecalho h3 {
+    margin-bottom: 1rem;
+    font-size: 2.8rem;
+}
+
+.pagina-locais .local-subtitulo {
+    font-size: var(--fs-base);
+}
+
+/* IMAGENS */
+
+.pagina-locais .local-imagem {
+    width: 100%;
+    max-height: 35rem;
+    margin-bottom: 2rem;
+    border-radius: 1.2rem;
+    object-fit: cover;
+}
+
+/* BLOCO DE INFORMACOES */
+
+.pagina-locais .local-informacoes {
+    padding: 2rem;
+    border-radius: 1.2rem;
+    background-color: var(--cor-cartao);
+}
+
+/* DESCRICAO DO ESPACO */
+
+.pagina-locais .local-descricao {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: var(--cor-clara);
+    background-color: var(--cor-primaria);
+}
+
+.pagina-locais .local-descricao h4 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+/* INFORMACOES UTEIS */
+
+.pagina-locais .local-dados h4 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.pagina-locais .local-dados p {
+    margin-bottom: 1rem;
+}
+
+.pagina-locais .local-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+.pagina-locais .local-link:hover {
+    text-decoration: underline;
+}
+
+/* ORGANIZACAO EM TELAS MAIORES */
+
+@media (min-width: 768px) {
+    .pagina-locais .local-informacoes {
+        display: flex;
+        align-items: stretch;
+        gap: 2rem;
+    }
+
+    .pagina-locais .local-descricao {
+        width: 40%;
+        margin-bottom: 0;
+    }
+
+    .pagina-locais .local-dados {
+        width: 60%;
+    }
+}
