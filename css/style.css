@@ -35,16 +35,29 @@ img {
    --fs-h2: 2.2rem;
    --fs-h1: 2.8rem;
 
+    --cor-primaria: #330509;
+    --cor-moldura: #4a0a0a;
+    --cor-fundo: #3B060A;
+    --cor-cartao: #e8d5ca;
+    --cor-rodape: #04120a;
+    --cor-texto: #2a0a0c;
+    --cor-clara: #ffffff;
+    --cor-foco: #ffb703;
+
 }
 
 html {
-  font-size: 62%;
+  font-size: 62.5%;
 }
 
 body {
   font-family: var(--fonte-texto);
   font-size: var(--fs-base);
   line-height: 1.5;
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  padding: 20px 23px 0;
+  background-color: #43080c;
 }
 
 h1, h2, h3 {
@@ -58,22 +71,6 @@ h3 { font-size: var(--fs-h3);}
 p { margin-bottom: 1.2rem; }
 
 /* CONFIGURAÇÕES GERAIS */
-:root {
-  --cor-primaria: #330509;
-  --cor-moldura: #4a0a0a;
-  --cor-fundo: #3B060A;
-  --cor-cartao: #e8d5ca;
-  --cor-rodape: #04120a;
-  --cor-texto: #2a0a0c;
-  --cor-clara: #ffffff;
-  --cor-foco: #ffb703;
-}
- 
-
-body {
-  color: var(--cor-texto);
-  background-color: var(--cor-fundo);
-}
 
 
 a {
@@ -107,6 +104,9 @@ summary:focus-visible {
 
 .linha {
   font-size: 0;
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
 }
 
 .linha > * {
@@ -285,6 +285,7 @@ summary:focus-visible {
   border-radius: 1.6rem;
   color: var(--cor-clara);
   background-color: var(--cor-primaria);
+  padding: 30px;
 }
  
 .beneficios li {
@@ -322,6 +323,9 @@ summary:focus-visible {
   max-width: 30rem;
   margin: 1rem 0;
   border-radius: 1.6rem;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }
  
 .legenda {
@@ -450,14 +454,6 @@ article section {
 }
 
 /* Estrutura das páginas */
-html {
-  font-size: 62.5%;
-}
-
-body {
-  padding: 20px 23px 0;
-  background-color: #43080c;
-}
 
 /* Conteúdo principal */
 body > main {
@@ -525,11 +521,6 @@ body > .cabecalho-home {
 }
 
 /* Colunas das seções */
-.linha {
-  display: flex;
-  gap: 30px;
-  font-size: 16px;
-}
 
 .linha > .coluna {
   width: 50%;
@@ -566,11 +557,10 @@ body > .cabecalho-home {
 }
 
 /* Apresentação do Conecta Campus */
-.sobre {
-  padding: 30px;
-}
 
 .sobre h2 {
+  font-size: 28px;
+  font-weight: normal;
   font-size: 28px;
   font-weight: normal;
 }
@@ -587,13 +577,6 @@ body > .cabecalho-home {
 
 .beneficios p {
   font-size: 14px;
-}
-
-/* Imagem do campus */
-.espacos img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
 }
 
 /* Rodapé */
@@ -672,6 +655,28 @@ body > .cabecalho-locais {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+
+.chamada-locais {
+  max-width: 550px;
+  margin: 100px auto 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.chamada-locais h1 {
+  margin-bottom: 25px;
+  font-size: 38px;
+  font-weight: normal;
+  line-height: 1.3;
+}
+
+.chamada-locais p {
+  margin-bottom: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
 }
 
 .cabecalho-locais .barra-locais {
@@ -824,101 +829,6 @@ body > .cabecalho-locais {
 .pagina-locais .local-dados a:hover {
     text-decoration: underline;
 }
-
-.linha > .coluna {
-  width: 50%;
-  min-width: 0;
-  margin-bottom: 0;
-}
-
-/* Apresentação do Conecta Campus */
-.sobre {
-  padding: 30px;
-}
-
-.sobre h2 {
-  font-size: 28px;
-  font-weight: normal;
-}
-
-.coluna-beneficios {
-  border-left: 1px solid #ffffff;
-  padding-left: 30px;
-}
-
-/* Benefícios */
-.beneficios {
-  margin-top: 24px;
-}
-
-.beneficios p {
-  font-size: 14px;
-}
-
-/* Imagem do campus */
-.espacos img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-}
-
-/* Rodapé */
-body > .rodape {
-  margin-left: -23px;
-  margin-right: -23px;
-  padding: 40px 23px;
-  background-color: #00110b;
-  color: #fff2e6;
-  text-align: center;
-}
-
-.rodape-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.rodape-descricao {
-  margin: 30px 0;
-  font-size: 20px;
-}
-
-/* Links do rodapé */
-.rodape-links {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.rodape-links li {
-  display: inline-block;
-  margin: 8px;
-}
-
-.rodape-links a {
-  display: inline-block;
-  padding: 8px 20px;
-  border-radius: 30px;
-  background-color: #53605b;
-  color: #ffffff;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.rodape-links a:hover {
-  background-color: #6b7972;
-  text-decoration: none;
-}
-
-/* Linha e direitos autorais */
-.rodape .rodape-copyright {
-  margin-top: 35px;
-  margin-bottom: 0;
-  padding-top: 24px;
-  border-top: 1px solid #d7dfd9;
-  text-align: left;
-  font-size: 16px;
-}
-
 
 
 
@@ -1253,52 +1163,4 @@ body > .pagina-detalhes {
 .pagina-detalhes .conteudo-destaque h3 {
     margin-bottom: 1.5rem;
     font-size: 2.4rem;
-}
-
-/* TELAS MENORES */
-
-@media (max-width: 767px) {
-    .cabecalho-detalhes .barra-detalhes {
-        justify-content: space-between;
-        gap: 1.5rem;
-    }
-
-    .cabecalho-detalhes .titulo-campus {
-        font-size: 2.2rem;
-    }
-
-    .cabecalho-detalhes .navegacao-detalhes {
-        margin-left: auto;
-    }
-
-    .cabecalho-detalhes .navegacao-detalhes .menu {
-        justify-content: flex-end;
-        gap: 1rem;
-    }
-
-    .cabecalho-detalhes .chamada-detalhes {
-        margin-top: 4rem;
-    }
-
-    .chamada-detalhes h1 {
-        font-size: 2.8rem;
-    }
-
-    .pagina-detalhes .informacoes-espaco,
-    .pagina-detalhes .grade-atividades,
-    .pagina-detalhes .atividade-destaque {
-        grid-template-columns: 1fr;
-    }
-
-    .pagina-detalhes .imagem-espaco {
-        height: 22rem;
-    }
-
-    .pagina-detalhes .banner-atividades h3 {
-        font-size: 2.6rem;
-    }
-
-    .pagina-detalhes .imagem-destaque {
-        height: 24rem;
-    }
 }
