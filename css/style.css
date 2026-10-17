@@ -36,3 +36,24 @@ img {
    --fs-h1: 2.8rem;
 
 }
+
+html {
+  font-size: 62%;
+}
+
+body {
+  font-family: var(--fonte-texto);
+  font-size: var(--fs-base);
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: var(--fonte-texto);
+  font-weight: bold;
+}
+
+h1 { font-size: var(--fs-h1); line-height: 1.2; }
+h2 { font-size: var(--fs-h2); line-height: 1.25; margin-bottom: 1.2rem;}
+h3 { font-size: var(--fs-h3);} 
+p { margin-bottom: 1.2rem; }
+
