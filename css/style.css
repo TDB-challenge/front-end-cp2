@@ -447,21 +447,31 @@ article section {
   --cor-fundo: #fff2e6;
   --cor-moldura: #43080c;
 }
-html { font-size: 62.5%; scroll-behavior: smooth; }
-body { padding: 2rem 23px 0; background: var(--cor-moldura); }
-body > main {
-  max-width: 120rem;
-  margin: 0 auto 2.4rem;
-  padding: clamp(2rem, 5vw, 6rem);
-  border-radius: 1.6rem;
-  background: var(--cor-fundo);
+
+
+html { font-size: 62.5%;
+  scroll-behavior: smooth;
 }
+
+
+
+body {
+  padding: 1rem 1rem 0;
+  background: var(--cor-moldura);
+}
+
+
+body > main {
+    max-width: none;
+    margin: 0;
+    padding: clamp(2rem, 5vw, 6rem);
+    border-radius: 0;
+    background: var(--cor-fundo);
+}
+
 body > .cabecalho {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 3rem;
-  border-radius: 1.6rem 1.6rem 0 0;
-  background-color: var(--cor-primaria);
+max-width: none;
+border-radius: 1.2rem 1.2rem 0 0;
 }
 .cabecalho:has(.menu) {
   min-height: 38rem;
@@ -495,7 +505,16 @@ body > .cabecalho {
 .beneficios { margin-top: 2.4rem; }
 .beneficios p { font-size: 1.4rem; }
 .espacos img { object-fit: cover; }
-body > .rodape { margin-inline: -23px; padding: 4rem 23px; }
+
+body > .rodape {
+    margin-inline: -1rem;
+    padding: 40px 23px;
+    background-color: #00110b;
+    color: #fff2e6;
+    text-align: center;
+}
+
+
 @media (min-width: 768px) {
   .linha { display: flex; gap: 3rem; align-items: flex-start; }
   .linha > .coluna { flex: 1; margin-bottom: 0; }
@@ -516,7 +535,7 @@ body > .rodape { margin-inline: -23px; padding: 4rem 23px; }
 
 /* RODAPÉ */
 body > .rodape {
-    margin-inline: -23px;
+    margin-inline: -1rem;
     padding: 40px 23px;
     background-color: #00110b;
     color: #fff2e6;
@@ -618,10 +637,29 @@ body > .rodape {
 
 /* PAGINA LOCAIS */
 
-/* TITULO E INTRODUCAO */
+/* REMOVE A MOLDURA EXTERNA APENAS EM LOCAIS */
+
+body:has(> .pagina-locais) {
+    padding: 0;
+    background-color: var(--cor-fundo);
+}
+
+body:has(> .pagina-locais) > .cabecalho {
+    max-width: none;
+    border-radius: 0;
+}
+
+body > .pagina-locais {
+    max-width: none;
+    margin: 0;
+    padding: 3rem 5%;
+    border-radius: 0;
+}
+
+/* INTRODUCAO */
 
 .pagina-locais .titulo-pagina {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     text-align: center;
 }
 
@@ -634,7 +672,7 @@ body > .rodape {
 }
 
 .pagina-locais .titulo-pagina h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-size: 3rem;
 }
 
@@ -642,11 +680,16 @@ body > .rodape {
     font-size: var(--fs-base);
 }
 
-/* ESPACOS DO CAMPUS */
+/* SECOES DOS LOCAIS */
+
+.pagina-locais .lista-locais {
+    max-width: 110rem;
+    margin: 0 auto;
+}
 
 .pagina-locais .local {
-    margin-bottom: 4rem;
-    padding-bottom: 4rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
     border-bottom: 1px solid var(--cor-cartao);
 }
 
@@ -659,15 +702,16 @@ body > .rodape {
 /* TITULOS E SUBTITULOS */
 
 .pagina-locais .local-cabecalho {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .pagina-locais .local-cabecalho h3 {
-    margin-bottom: 1rem;
-    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.6rem;
 }
 
 .pagina-locais .local-subtitulo {
+    margin-bottom: 0;
     font-size: var(--fs-base);
 }
 
@@ -675,24 +719,28 @@ body > .rodape {
 
 .pagina-locais .local-imagem {
     width: 100%;
-    max-height: 35rem;
-    margin-bottom: 2rem;
-    border-radius: 1.2rem;
+    height: 28rem;
+    max-height: none;
+    margin: 0 0 1.5rem;
+    border-radius: 1rem;
     object-fit: cover;
 }
 
-/* BLOCO DE INFORMACOES */
+/* AGRUPAMENTO DAS INFORMACOES */
 
 .pagina-locais .local-informacoes {
-    padding: 2rem;
-    border-radius: 1.2rem;
-    background-color: var(--cor-cartao);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0;
+    background: transparent;
 }
 
-/* DESCRICAO DO ESPACO */
+/* BLOCO DE DESCRICAO */
 
 .pagina-locais .local-descricao {
-    margin-bottom: 2rem;
+    width: auto;
+    margin: 0;
     padding: 2rem;
     border-radius: 1rem;
     color: var(--cor-clara);
@@ -704,7 +752,14 @@ body > .rodape {
     font-size: 1.8rem;
 }
 
-/* INFORMACOES UTEIS */
+/* BLOCO DE DADOS */
+
+.pagina-locais .local-dados {
+    width: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: var(--cor-cartao);
+}
 
 .pagina-locais .local-dados h4 {
     margin-bottom: 1rem;
@@ -722,25 +777,32 @@ body > .rodape {
     color: var(--cor-primaria);
 }
 
-.pagina-locais .local-link:hover {
-    text-decoration: underline;
-}
-
-/* ORGANIZACAO EM TELAS MAIORES */
+/* BLOCOS LADO A LADO EM TELAS MAIORES */
 
 @media (min-width: 768px) {
     .pagina-locais .local-informacoes {
-        display: flex;
-        align-items: stretch;
-        gap: 2rem;
+        flex-direction: row;
     }
 
     .pagina-locais .local-descricao {
-        width: 40%;
-        margin-bottom: 0;
+        flex: 2;
     }
 
     .pagina-locais .local-dados {
-        width: 60%;
+        flex: 3;
     }
 }
+
+/* AJUSTES PARA CELULARES */
+
+@media (max-width: 767px) {
+    body > .pagina-locais {
+        padding: 2.5rem 5%;
+    }
+
+    .pagina-locais .local-imagem {
+        height: 22rem;
+    }
+}
+
+
