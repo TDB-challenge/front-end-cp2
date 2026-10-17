@@ -57,3 +57,61 @@ h2 { font-size: var(--fs-h2); line-height: 1.25; margin-bottom: 1.2rem;}
 h3 { font-size: var(--fs-h3);} 
 p { margin-bottom: 1.2rem; }
 
+/* CONFIGURAÇÕES GERAIS */
+:root {
+  --cor-primaria: #330509;
+  --cor-moldura: #4a0a0a;
+  --cor-fundo: #fdf1e6;
+  --cor-cartao: #e8d5ca;
+  --cor-rodape: #04120a;
+  --cor-texto: #2a0a0c;
+  --cor-clara: #ffffff;
+  --cor-foco: #ffb703;
+}
+ 
+
+body {
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+}
+
+
+a {
+  color: inherit;
+}
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible,
+summary:focus-visible {
+  outline: 0.3rem solid var(--cor-foco);
+  outline-offset: 0.2rem;
+}
+
+.container {
+  width: 92%;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.so-leitor {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.linha {
+  font-size: 0;
+}
+
+.linha > * {
+  font-size: var(--fs-base);
+  vertical-align: top;
+}
+
+
