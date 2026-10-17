@@ -13,7 +13,426 @@ RM575845-TAIANE MIRELLA SANTOS DE ALCÂNTARA */
 }
 
 
+ul {
+  list-style: none;
+}
+ 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ 
 /* PADRONIZAÇÃO DE FONTES */
+:root {
+  --fonte-texto: Georgia, 'Times New Roman', Times, serif;
+  --fonte-interface: Arial, Helvetica, sans-serif;
+
+   --fs-pequeno: 1.2rem;
+   --fs-menu: 1.4rem;
+   --fs-base: 1.6rem;
+   --fs-h3: 1.8rem;
+   --fs-h2: 2.2rem;
+   --fs-h1: 2.8rem;
+
+}
+
 html {
   font-size: 62%;
+}
+
+body {
+  font-family: var(--fonte-texto);
+  font-size: var(--fs-base);
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: var(--fonte-texto);
+  font-weight: bold;
+}
+
+h1 { font-size: var(--fs-h1); line-height: 1.2; }
+h2 { font-size: var(--fs-h2); line-height: 1.25; margin-bottom: 1.2rem;}
+h3 { font-size: var(--fs-h3);} 
+p { margin-bottom: 1.2rem; }
+
+/* CONFIGURAÇÕES GERAIS */
+:root {
+  --cor-primaria: #330509;
+  --cor-moldura: #4a0a0a;
+  --cor-fundo: #fdf1e6;
+  --cor-cartao: #e8d5ca;
+  --cor-rodape: #04120a;
+  --cor-texto: #2a0a0c;
+  --cor-clara: #ffffff;
+  --cor-foco: #ffb703;
+}
+ 
+
+body {
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+}
+
+
+a {
+  color: inherit;
+}
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible,
+summary:focus-visible {
+  outline: 0.3rem solid var(--cor-foco);
+  outline-offset: 0.2rem;
+}
+
+.container {
+  width: 92%;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.so-leitor {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.linha {
+  font-size: 0;
+}
+
+.linha > * {
+  font-size: var(--fs-base);
+  vertical-align: top;
+}
+
+/* CABEÇALHO */
+.moldura {
+  padding: 1rem;
+  background-color: var(--cor-moldura);
+}
+
+.cabecalho {
+  color: var(--cor-clara);
+}
+
+.cabecalho-interno {
+  padding: 1.6rem 0;
+  background-color: var(--cor-primaria);
+}
+
+.hero {
+  padding: 2rem 0 3rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../img/campus.jpg") center / cover no-repeat;
+}
+
+.barra {
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-family: var(--fonte-interface);
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--cor-clara);
+}
+
+.logo span {
+  font-weight: normal;
+}
+
+.hero-texto {
+  width: 92%;
+  max-width: 45rem;
+  margin: 4rem auto 2rem;
+}
+
+.hero-texto h1 {
+  margin-bottom: 1.2rem;
+  font-weight: normal;
+}
+
+.hero-texto p {
+  font-family: var(--fonte-interface);
+  font-size: 1.4rem;
+}
+
+.botao {
+  display: inline-block;
+  padding: 0.8rem 2.4rem;
+  border: 1px solid var(--cor-clara);
+  border-radius: 0.8rem;
+  font-family: var(--fonte-interface);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--cor-clara);
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.botao:hover {
+  background-color: rgba(255, 255, 255, 0.45);
+  text-decoration: none;
+}
+
+.botao-escuro {
+  margin-top: 2rem;
+  background-color: var(--cor-primaria);
+}
+
+.botao-escuro:hover {
+  background-color: var(--cor-moldura);
+}
+
+/* MENU */
+.menu li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+ 
+.menu a {
+  font-family: var(--fonte-interface);
+  font-size: var(--fs-menu);
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--cor-clara);
+}
+ 
+.menu a:hover,
+.menu a:active {
+  text-decoration: underline;
+}
+
+.menu a.ativo {
+  text-decoration: underline; /* não depende só da cor */
+}
+
+/* CONTEÚDO */
+.painel {
+  margin-top: 1rem;
+  padding: 2rem 1.5rem;
+  border-radius: 1.2rem;
+  background-color: var(--cor-fundo);
+}
+
+.conteudo {
+  padding: 3rem 0;
+}
+ 
+.intro {
+  margin: 1rem 0 2rem;
+}
+
+.divisor {
+  margin: 2.4rem 0;
+  border: 0;
+  border-top: 1px solid var(--cor-cartao);
+}
+
+.destaque {
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+ 
+.destaque h3 {
+  margin-bottom: 0.8rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+ 
+.destaque img {
+  width: 100%;
+  max-width: 22rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.sobre {
+  padding: 2.4rem 2rem;
+  border-radius: 1.6rem;
+  color: var(--cor-clara);
+  background-color: var(--cor-primaria);
+}
+ 
+.coluna {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+ 
+.beneficios li {
+  margin-bottom: 1.6rem;
+}
+ 
+.icone {
+  display: inline-block;
+  width: 15%;
+  font-size: 2.4rem;
+  vertical-align: top;
+}
+ 
+.beneficio-texto {
+  display: inline-block;
+  width: 80%;
+  vertical-align: top;
+}
+ 
+.beneficio-texto h3 {
+  font-size: 1.7rem;
+}
+ 
+.beneficio-texto p {
+  margin-bottom: 0;
+  font-size: var(--fs-pequeno);
+}
+
+.espacos {
+  margin-top: 3rem;
+}
+ 
+.espacos img {
+  width: 100%;
+  max-width: 30rem;
+  margin: 1rem 0;
+  border-radius: 1.6rem;
+}
+ 
+.legenda {
+  font-size: var(--fs-pequeno);
+}
+ 
+.acordeao details {
+  margin-bottom: 1rem;
+  padding: 1.2rem 1.6rem;
+  border-radius: 1.2rem;
+  background-color: var(--cor-cartao);
+}
+ 
+.acordeao summary {
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: bold;
+  list-style: none;
+}
+ 
+.acordeao summary::-webkit-details-marker {
+  display: none;
+}
+ 
+.acordeao summary::after {
+  content: "+";
+  float: right;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 0.2rem solid var(--cor-texto);
+  border-radius: 50%;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  text-align: center;
+}
+ 
+.acordeao details[open] summary::after {
+  content: "−";
+}
+ 
+.acordeao details p {
+  margin: 0.8rem 0;
+  font-size: 1.5rem;
+}
+ 
+.acordeao details a {
+  font-size: var(--fs-pequeno);
+}
+
+/* CARTÕES */
+.cartao {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1.6rem;
+  border-radius: 1.2rem;
+  background-color: var(--cor-cartao);
+}
+ 
+.cartao img {
+  width: 100%;
+  margin-bottom: 1.2rem;
+  border-radius: 0.8rem;
+}
+ 
+.cartao h2 {
+  font-size: 2rem;
+}
+ 
+.cartao p {
+  margin-bottom: 0.6rem;
+  font-size: 1.5rem;
+}
+ 
+.cartao a {
+  font-weight: bold;
+  color: var(--cor-primaria);
+}
+
+.img-detalhe {
+  width: 100%;
+  max-width: 50rem;
+  margin: 1.6rem 0;
+  border-radius: 1.2rem;
+}
+ 
+.lista-simples {
+  margin: 0 0 2rem 2rem;
+  list-style: disc;
+}
+ 
+article section {
+  margin-top: 2rem;
+}
+
+/* RODAPÉ */
+.rodape {
+  padding: 3rem 0;
+  text-align: center;
+  color: var(--cor-clara);
+  background-color: var(--cor-rodape);
+}
+ 
+.rodape-texto {
+  margin: 1.6rem 0;
+  font-size: 1.5rem;
+}
+ 
+.tags li {
+  display: inline-block;
+  margin: 0.4rem;
+}
+ 
+.tags a {
+  display: inline-block;
+  padding: 0.3rem 1.2rem;
+  border: 1px solid #5c6b62;
+  border-radius: 2rem;
+  font-size: var(--fs-pequeno);
+  text-decoration: none;
+  color: var(--cor-clara);
+  background-color: #1a2a20;
+}
+
+.tags a:hover {
+  background-color: #2a3d31;
 }
