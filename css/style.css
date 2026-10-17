@@ -649,12 +649,6 @@ body:has(> .pagina-locais) > .cabecalho {
     border-radius: 0;
 }
 
-body > .pagina-locais {
-    max-width: none;
-    margin: 0;
-    padding: 3rem 5%;
-    border-radius: 0;
-}
 
 /* INTRODUCAO */
 
@@ -777,32 +771,6 @@ body > .pagina-locais {
     color: var(--cor-primaria);
 }
 
-/* BLOCOS LADO A LADO EM TELAS MAIORES */
 
-@media (min-width: 768px) {
-    .pagina-locais .local-informacoes {
-        flex-direction: row;
-    }
-
-    .pagina-locais .local-descricao {
-        flex: 2;
-    }
-
-    .pagina-locais .local-dados {
-        flex: 3;
-    }
-}
-
-/* AJUSTES PARA CELULARES */
-
-@media (max-width: 767px) {
-    body > .pagina-locais {
-        padding: 2.5rem 5%;
-    }
-
-    .pagina-locais .local-imagem {
-        height: 22rem;
-    }
-}
 
 
