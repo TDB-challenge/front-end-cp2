@@ -28,4 +28,11 @@ img {
   --fonte-texto: Georgia, 'Times New Roman', Times, serif;
   --fonte-interface: Arial, Helvetica, sans-serif;
 
+   --fs-pequeno: 1.2rem;
+   --fs-menu: 1.4rem;
+   --fs-base: 1.6rem;
+   --fs-h3: 1.8rem;
+   --fs-h2: 2.2rem;
+   --fs-h1: 2.8rem;
+
 }
