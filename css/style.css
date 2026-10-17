@@ -461,7 +461,6 @@ body {
 
 /* Conteúdo principal */
 body > main {
-  max-width: 1200px;
   margin: 0 auto 24px;
   padding: 40px;
   border-radius: 16px;
@@ -470,7 +469,6 @@ body > main {
 
 /* Cabeçalho */
 body > .cabecalho {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
   border-radius: 16px 16px 0 0;
@@ -740,7 +738,6 @@ body > .rodape {
 
 .pagina-locais .local-dados a:hover {
     text-decoration: underline;
-}
 }
 
 .linha > .coluna {
