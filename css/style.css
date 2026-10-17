@@ -1164,3 +1164,209 @@ body > .pagina-detalhes {
     margin-bottom: 1.5rem;
     font-size: 2.4rem;
 }
+
+/* TELAS MENORES */
+
+@media (max-width: 767px) {
+    .cabecalho-detalhes .barra-detalhes {
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    .cabecalho-detalhes .titulo-campus {
+        font-size: 2.2rem;
+    }
+
+    .cabecalho-detalhes .navegacao-detalhes {
+        margin-left: auto;
+    }
+
+    .cabecalho-detalhes .navegacao-detalhes .menu {
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    .cabecalho-detalhes .chamada-detalhes {
+        margin-top: 4rem;
+    }
+
+    .chamada-detalhes h1 {
+        font-size: 2.8rem;
+    }
+
+    .pagina-detalhes .informacoes-espaco,
+    .pagina-detalhes .grade-atividades,
+    .pagina-detalhes .atividade-destaque {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-detalhes .imagem-espaco {
+        height: 22rem;
+    }
+
+    .pagina-detalhes .banner-atividades h3 {
+        font-size: 2.6rem;
+    }
+
+    .pagina-detalhes .imagem-destaque {
+        height: 24rem;
+    }
+}
+
+.cabecalho.cabecalho-integrantes {
+    min-height: 380px;
+    padding: 60px 70px 35px;
+    background-image:
+        linear-gradient(#00110999, #00110999),
+        url("../img/campos_backgroud.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.barra-integrantes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.barra-integrantes .titulo-campus {
+    font-size: 36px;
+}
+
+.barra-integrantes .menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+.barra-integrantes .menu li {
+    margin: 0;
+}
+
+.chamada-integrantes {
+    margin: 70px auto 20px;
+    text-align: center;
+}
+
+.chamada-integrantes h1 {
+    margin-bottom: 25px;
+    font-size: 38px;
+    font-weight: normal;
+    line-height: 1.3;
+}
+
+.chamada-integrantes p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+main.pagina-integrantes {
+    padding: 40px;
+    border-radius: 0 0 16px 16px;
+}
+
+.pagina-integrantes .titulo-pagina {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.pagina-integrantes .etiqueta {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #330509;
+}
+
+.pagina-integrantes .titulo-pagina h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.pagina-integrantes .integrantes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pagina-integrantes .integrante {
+    width: 30%;
+    margin: 0;
+    padding: 24px;
+    text-align: center;
+}
+
+.pagina-integrantes .integrante img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.pagina-integrantes .integrante h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.pagina-integrantes .integrante p {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.pagina-integrantes .integrante-links {
+    margin-top: 20px;
+}
+
+.pagina-integrantes .integrante-links a {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: #3305097f;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.pagina-integrantes .integrante-links a:hover {
+    background-color: #4a0a0a;
+    text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+    .pagina-integrantes .integrante {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .barra-integrantes {
+        flex-direction: column;
+    }
+
+    .barra-integrantes .menu {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .chamada-integrantes h1 {
+        font-size: 28px;
+    }
+
+    main.pagina-integrantes {
+        padding: 25px 15px;
+    }
+
+    .pagina-integrantes .integrante {
+        width: 100%;
+    }
+
+    .cabecalho.cabecalho-integrantes {
+    padding: 30px 20px;
+}
+}
