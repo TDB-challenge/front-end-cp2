@@ -538,6 +538,34 @@ body > .cabecalho-home {
 }
 
 /* Apresentação do Conecta Campus */
+.fotos-campus {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #dfd2c8;
+}
+
+.foto-campus {
+  width: 22%;
+  text-align: center;
+}
+
+.foto-campus h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.foto-campus img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Apresentação do Conecta Campus */
 .sobre {
   padding: 30px;
 }
