@@ -23,3 +23,9 @@ img {
   height: auto;
 }
  
+/* PADRONIZAÇÃO DE FONTES */
+:root {
+  --fonte-texto: Georgia, 'Times New Roman', Times, serif;
+  --fonte-interface: Arial, Helvetica, sans-serif;
+
+}
