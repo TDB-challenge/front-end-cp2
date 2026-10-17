@@ -632,6 +632,63 @@ body > .rodape {
 
 /* INTRODUCAO */
 
+
+/* CABECALHO DA PAGINA LOCAIS */
+
+body > .cabecalho-locais {
+    min-height: 38rem;
+    padding: 3rem 5%;
+    background-image:
+        linear-gradient(#00110999, #00110999),
+        url("../img/campos_backgroud.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cabecalho-locais .barra-locais {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cabecalho-locais .titulo-campus {
+    font-family: var(--fonte-interface);
+    font-size: 2.8rem;
+    color: var(--cor-clara);
+    text-decoration: none;
+}
+
+.cabecalho-locais .navegacao-locais {
+    margin-left: auto;
+}
+
+.cabecalho-locais .menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.cabecalho-locais .menu li {
+    margin: 0;
+}
+
+.cabecalho-locais .chamada-locais {
+    max-width: 60rem;
+    margin: 7rem auto 2rem;
+    text-align: center;
+}
+
+.cabecalho-locais .chamada-locais h1 {
+    font-size: 3.4rem;
+    font-weight: normal;
+    color: var(--cor-clara);
+}
+
+
+
 .pagina-locais .titulo-pagina {
     margin-bottom: 3rem;
     text-align: center;
@@ -832,4 +889,388 @@ body > .rodape {
   border-top: 1px solid #d7dfd9;
   text-align: left;
   font-size: 16px;
+}
+
+
+
+
+/* --------------------------------------------------------- */
+/* PAGINA DETALHES */
+
+/* CABECALHO */
+
+body > .cabecalho-detalhes {
+    min-height: 38rem;
+    padding: 3rem 5%;
+    background-image:
+        linear-gradient(#00110999, #00110999),
+        url("../img/campos_backgroud.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* LOGO A ESQUERDA E MENU A DIREITA */
+
+.cabecalho-detalhes .barra-detalhes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    text-align: left;
+}
+
+.cabecalho-detalhes .titulo-campus {
+    font-family: var(--fonte-interface);
+    font-size: 2.8rem;
+    color: var(--cor-clara);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.cabecalho-detalhes .navegacao-detalhes {
+    margin-left: auto;
+}
+
+.cabecalho-detalhes .navegacao-detalhes .menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cabecalho-detalhes .navegacao-detalhes .menu li {
+    margin: 0;
+}
+
+.cabecalho-detalhes .navegacao-detalhes .menu a {
+    font-family: var(--fonte-interface);
+    font-size: var(--fs-menu);
+    font-weight: bold;
+    color: var(--cor-clara);
+    text-decoration: none;
+}
+
+.cabecalho-detalhes .navegacao-detalhes .menu a:hover,
+.cabecalho-detalhes .navegacao-detalhes .menu a:focus-visible,
+.cabecalho-detalhes .navegacao-detalhes .menu a[aria-current="page"] {
+    text-decoration: underline;
+}
+
+/* TEXTO CENTRAL DO CABECALHO */
+
+.cabecalho-detalhes .chamada-detalhes {
+    max-width: 60rem;
+    margin: 7rem auto 2rem;
+    text-align: center;
+    color: var(--cor-clara);
+}
+
+.chamada-detalhes h1 {
+    margin-bottom: 2rem;
+    font-size: 3.4rem;
+    font-weight: normal;
+}
+
+.chamada-detalhes p {
+    font-family: var(--fonte-interface);
+    font-size: 1.5rem;
+}
+
+/* CONTEUDO PRINCIPAL */
+
+body > .pagina-detalhes {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto 2.4rem;
+    padding: 4rem 5%;
+    border-radius: 0 0 1.6rem 1.6rem;
+    background-color: #fff2e6;
+    color: var(--cor-texto);
+}
+
+/* INTRODUCAO */
+
+.pagina-detalhes .introducao-detalhes {
+    margin-bottom: 4rem;
+}
+
+.pagina-detalhes .etiqueta-detalhes {
+    font-family: var(--fonte-interface);
+    font-size: var(--fs-pequeno);
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+.pagina-detalhes .introducao-detalhes h2 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.pagina-detalhes .voltar-detalhes {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+/* ESPACOS DO CAMPUS */
+
+.pagina-detalhes .espaco-detalhes {
+    margin-bottom: 5rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid var(--cor-cartao);
+}
+
+.pagina-detalhes .cabecalho-espaco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.pagina-detalhes .cabecalho-espaco h2 {
+    margin-bottom: 0.5rem;
+    font-size: 2.8rem;
+}
+
+.pagina-detalhes .cabecalho-espaco p {
+    margin-bottom: 0;
+}
+
+.pagina-detalhes .categoria-espaco {
+    font-family: var(--fonte-interface);
+    font-size: var(--fs-pequeno);
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+/* IMAGENS DOS ESPACOS */
+
+.pagina-detalhes .imagem-espaco {
+    width: 100%;
+    height: 28rem;
+    margin-bottom: 2rem;
+    border-radius: 1.2rem;
+    object-fit: cover;
+}
+
+/* CARTOES DE INFORMACOES */
+
+.pagina-detalhes .informacoes-espaco {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.pagina-detalhes .cartao-detalhes {
+    overflow: hidden;
+    border-radius: 1.2rem;
+    background-color: var(--cor-cartao);
+}
+
+.pagina-detalhes .cartao-detalhes h3 {
+    margin: 0;
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+    font-weight: normal;
+    color: var(--cor-clara);
+    background-color: var(--cor-primaria);
+}
+
+.pagina-detalhes .cartao-conteudo {
+    padding: 2rem;
+}
+
+.pagina-detalhes .cartao-conteudo p {
+    margin-bottom: 1rem;
+}
+
+.pagina-detalhes .cartao-conteudo ul {
+    padding-left: 2rem;
+    list-style: disc;
+}
+
+.pagina-detalhes .cartao-conteudo li {
+    margin-bottom: 1rem;
+}
+
+/* ATIVIDADES DO CAMPUS */
+
+.pagina-detalhes .atividades-campus {
+    margin-top: 5rem;
+}
+
+.pagina-detalhes .cabecalho-atividades {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.pagina-detalhes .cabecalho-atividades h2 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+/* BANNER DE ATIVIDADES */
+
+.pagina-detalhes .banner-atividades {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 28rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    background-image:
+        linear-gradient(#00000088, #00000088),
+        url("../img/atividades.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pagina-detalhes .banner-atividades h3 {
+    max-width: 75rem;
+    font-size: 3.6rem;
+    font-weight: normal;
+    color: var(--cor-clara);
+}
+
+/* CARTOES DE ATIVIDADES */
+
+.pagina-detalhes .grade-atividades {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.pagina-detalhes .atividade {
+    overflow: hidden;
+    border-radius: 1.2rem;
+    background-color: #f4ddd0;
+}
+
+.pagina-detalhes .atividade h3 {
+    margin: 0;
+    padding: 1.2rem 1.5rem;
+    font-size: 2.2rem;
+    font-weight: normal;
+    color: var(--cor-clara);
+    background-color: var(--cor-primaria);
+}
+
+.pagina-detalhes .atividade-conteudo {
+    padding: 1.5rem;
+}
+
+.pagina-detalhes .atividade-conteudo h4 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.pagina-detalhes .atividade-conteudo p {
+    font-size: 1.4rem;
+}
+
+/* ATIVIDADE EM DESTAQUE */
+
+.pagina-detalhes .atividade-destaque {
+    display: grid;
+    grid-template-columns: 45% minmax(0, 1fr);
+    overflow: hidden;
+    border-radius: 1.2rem;
+    background-color: var(--cor-cartao);
+}
+
+.pagina-detalhes .imagem-destaque {
+    position: relative;
+    min-height: 25rem;
+}
+
+.pagina-detalhes .imagem-destaque img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pagina-detalhes .imagem-destaque h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2.8rem;
+    color: var(--cor-clara);
+}
+
+.pagina-detalhes .conteudo-destaque {
+    padding: 3rem;
+}
+
+.pagina-detalhes .conteudo-destaque h3 {
+    margin-bottom: 1.5rem;
+    font-size: 2.4rem;
+}
+
+/* TELAS MENORES */
+
+@media (max-width: 767px) {
+    .cabecalho-detalhes .barra-detalhes {
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    .cabecalho-detalhes .titulo-campus {
+        font-size: 2.2rem;
+    }
+
+    .cabecalho-detalhes .navegacao-detalhes {
+        margin-left: auto;
+    }
+
+    .cabecalho-detalhes .navegacao-detalhes .menu {
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    .cabecalho-detalhes .chamada-detalhes {
+        margin-top: 4rem;
+    }
+
+    .chamada-detalhes h1 {
+        font-size: 2.8rem;
+    }
+
+    .pagina-detalhes .informacoes-espaco,
+    .pagina-detalhes .grade-atividades,
+    .pagina-detalhes .atividade-destaque {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-detalhes .imagem-espaco {
+        height: 22rem;
+    }
+
+    .pagina-detalhes .banner-atividades h3 {
+        font-size: 2.6rem;
+    }
+
+    .pagina-detalhes .imagem-destaque {
+        height: 24rem;
+    }
 }
