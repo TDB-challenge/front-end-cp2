@@ -199,3 +199,26 @@ summary:focus-visible {
   background-color: var(--cor-moldura);
 }
 
+/* MENU */
+.menu li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+ 
+.menu a {
+  font-family: var(--fonte-interface);
+  font-size: var(--fs-menu);
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--cor-clara);
+}
+ 
+.menu a:hover,
+.menu a:active {
+  text-decoration: underline;
+}
+
+.menu a.ativo {
+  text-decoration: underline; /* não depende só da cor */
+}
+
