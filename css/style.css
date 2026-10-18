@@ -12,38 +12,36 @@ RM575845-TAIANE MIRELLA SANTOS DE ALCÂNTARA */
   box-sizing: border-box;
 }
 
-
 ul {
   list-style: none;
 }
- 
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
- 
+
 /* PADRONIZAÇÃO DE FONTES */
 :root {
-  --fonte-texto: Georgia, 'Times New Roman', Times, serif;
+  --fonte-texto: Georgia, "Times New Roman", Times, serif;
   --fonte-interface: Arial, Helvetica, sans-serif;
 
-   --fs-pequeno: 1.2rem;
-   --fs-menu: 1.4rem;
-   --fs-base: 1.6rem;
-   --fs-h3: 1.8rem;
-   --fs-h2: 2.2rem;
-   --fs-h1: 2.8rem;
+  --fs-pequeno: 1.2rem;
+  --fs-menu: 1.4rem;
+  --fs-base: 1.6rem;
+  --fs-h3: 1.8rem;
+  --fs-h2: 2.2rem;
+  --fs-h1: 2.8rem;
 
-    --cor-primaria: #330509;
-    --cor-moldura: #4a0a0a;
-    --cor-fundo: #3B060A;
-    --cor-cartao: #e8d5ca;
-    --cor-rodape: #04120a;
-    --cor-texto: #2a0a0c;
-    --cor-clara: #ffffff;
-    --cor-foco: #ffb703;
-
+  --cor-primaria: #330509;
+  --cor-moldura: #4a0a0a;
+  --cor-fundo: #3b060a;
+  --cor-cartao: #e8d5ca;
+  --cor-rodape: #04120a;
+  --cor-texto: #2a0a0c;
+  --cor-clara: #ffffff;
+  --cor-foco: #ffb703;
 }
 
 html {
@@ -60,23 +58,34 @@ body {
   background-color: #43080c;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--fonte-texto);
   font-weight: bold;
 }
 
-h1 { font-size: var(--fs-h1); line-height: 1.2; }
-h2 { font-size: var(--fs-h2); line-height: 1.25; margin-bottom: 1.2rem;}
-h3 { font-size: var(--fs-h3);} 
-p { margin-bottom: 1.2rem; }
+h1 {
+  font-size: var(--fs-h1);
+  line-height: 1.2;
+}
+h2 {
+  font-size: var(--fs-h2);
+  line-height: 1.25;
+  margin-bottom: 1.2rem;
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+p {
+  margin-bottom: 1.2rem;
+}
 
 /* CONFIGURAÇÕES GERAIS */
-
 
 a {
   color: inherit;
 }
-
 
 a:hover {
   text-decoration: underline;
@@ -199,7 +208,12 @@ summary:focus-visible {
   background-color: var(--cor-moldura);
 }
 
+/* --------------------------------------------------------------------------------------------------
+ */
+
+/* ESTILOS COMPARTILHADOS: logo e navegacao da Home, Locais e Detalhes. */
 /* MENU */
+
 .barra-home {
   display: flex;
   justify-content: space-between;
@@ -229,7 +243,7 @@ summary:focus-visible {
   color: #ffffff;
   text-decoration: none;
 }
- 
+
 .menu a:hover,
 .menu a:active {
   text-decoration: underline;
@@ -250,7 +264,7 @@ summary:focus-visible {
 .conteudo {
   padding: 3rem 0;
 }
- 
+
 .intro {
   margin: 1rem 0 2rem;
 }
@@ -266,13 +280,13 @@ summary:focus-visible {
   margin-bottom: 2rem;
   text-align: center;
 }
- 
+
 .destaque h3 {
   margin-bottom: 0.8rem;
   font-weight: normal;
   text-transform: uppercase;
 }
- 
+
 .destaque img {
   width: 100%;
   max-width: 22rem;
@@ -287,28 +301,28 @@ summary:focus-visible {
   background-color: var(--cor-primaria);
   padding: 30px;
 }
- 
+
 .beneficios li {
   margin-bottom: 1.6rem;
 }
- 
+
 .icone {
   display: inline-block;
   width: 15%;
   font-size: 2.4rem;
   vertical-align: top;
 }
- 
+
 .beneficio-texto {
   display: inline-block;
   width: 80%;
   vertical-align: top;
 }
- 
+
 .beneficio-texto h3 {
   font-size: 1.7rem;
 }
- 
+
 .beneficio-texto p {
   margin-bottom: 0;
   font-size: var(--fs-pequeno);
@@ -317,7 +331,7 @@ summary:focus-visible {
 .espacos {
   margin-top: 3rem;
 }
- 
+
 .espacos img {
   width: 100%;
   max-width: 30rem;
@@ -327,29 +341,29 @@ summary:focus-visible {
   max-width: 300px;
   height: auto;
 }
- 
+
 .legenda {
   font-size: var(--fs-pequeno);
 }
- 
+
 .acordeao details {
   margin-bottom: 1rem;
   padding: 1.2rem 1.6rem;
   border-radius: 1.2rem;
   background-color: var(--cor-cartao);
 }
- 
+
 .acordeao summary {
   cursor: pointer;
   font-size: 1.7rem;
   font-weight: bold;
   list-style: none;
 }
- 
+
 .acordeao summary::-webkit-details-marker {
   display: none;
 }
- 
+
 .acordeao summary::after {
   content: "+";
   float: right;
@@ -361,16 +375,16 @@ summary:focus-visible {
   line-height: 2rem;
   text-align: center;
 }
- 
+
 .acordeao details[open] summary::after {
   content: "−";
 }
- 
+
 .acordeao details p {
   margin: 0.8rem 0;
   font-size: 1.5rem;
 }
- 
+
 .acordeao details a {
   font-size: var(--fs-pequeno);
 }
@@ -383,22 +397,22 @@ summary:focus-visible {
   border-radius: 1.2rem;
   background-color: var(--cor-cartao);
 }
- 
+
 .cartao img {
   width: 100%;
   margin-bottom: 1.2rem;
   border-radius: 0.8rem;
 }
- 
+
 .cartao h2 {
   font-size: 2rem;
 }
- 
+
 .cartao p {
   margin-bottom: 0.6rem;
   font-size: 1.5rem;
 }
- 
+
 .cartao a {
   font-weight: bold;
   color: var(--cor-primaria);
@@ -410,12 +424,12 @@ summary:focus-visible {
   margin: 1.6rem 0;
   border-radius: 1.2rem;
 }
- 
+
 .lista-simples {
   margin: 0 0 2rem 2rem;
   list-style: disc;
 }
- 
+
 article section {
   margin-top: 2rem;
 }
@@ -427,17 +441,17 @@ article section {
   color: var(--cor-clara);
   background-color: var(--cor-rodape);
 }
- 
+
 .rodape-texto {
   margin: 1.6rem 0;
   font-size: 1.5rem;
 }
- 
+
 .tags li {
   display: inline-block;
   margin: 0.4rem;
 }
- 
+
 .tags a {
   display: inline-block;
   padding: 0.3rem 1.2rem;
@@ -453,6 +467,8 @@ article section {
   background-color: #2a3d31;
 }
 
+/* ------------------------------------------------------------------------------------------- */
+/* ESTRUTURA COMPARTILHADA: estilos aplicados aos elementos diretos do body. */
 /* Estrutura das páginas */
 
 /* Conteúdo principal */
@@ -477,8 +493,7 @@ body > .cabecalho-home {
   border-radius: 20px 20px 0 0;
 
   background-image:
-    linear-gradient(#000c098c, #000c098c),
-    url("../img/campos_backgroud.jpg");
+    linear-gradient(#000c098c, #000c098c), url("../img/campos_backgroud.jpg");
 
   background-position: center;
   background-size: cover;
@@ -556,8 +571,6 @@ body > .cabecalho-home {
   border-radius: 12px;
 }
 
-/* Apresentação do Conecta Campus */
-
 .sobre h2 {
   font-size: 28px;
   font-weight: normal;
@@ -565,12 +578,12 @@ body > .cabecalho-home {
   font-weight: normal;
 }
 
+/* Benefícios */
 .coluna-beneficios {
   border-left: 1px solid #ffffff;
   padding-left: 30px;
 }
 
-/* Benefícios */
 .beneficios {
   margin-top: 24px;
 }
@@ -581,11 +594,11 @@ body > .cabecalho-home {
 
 /* Rodapé */
 body > .rodape {
-    margin-inline: -1rem;
-    padding: 40px 23px;
-    background-color: #00110b;
-    color: #fff2e6;
-    text-align: center;
+  margin-inline: -1rem;
+  padding: 40px 23px;
+  background-color: #00110b;
+  color: #fff2e6;
+  text-align: center;
 }
 
 .rodape-container {
@@ -635,28 +648,21 @@ body > .rodape {
   font-size: 16px;
 }
 
-
-
-
-/* --------------------------------------------------------- */
 /* PAGINA LOCAIS */
 
 /* INTRODUCAO */
 
-
 /* CABECALHO DA PAGINA LOCAIS */
 
 body > .cabecalho-locais {
-    min-height: 38rem;
-    padding: 3rem 5%;
-    background-image:
-        linear-gradient(#00110999, #00110999),
-        url("../img/campos_backgroud.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  min-height: 38rem;
+  padding: 3rem 5%;
+  background-image:
+    linear-gradient(#00110999, #00110999), url("../img/campos_backgroud.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
 
 .chamada-locais {
   max-width: 550px;
@@ -680,693 +686,677 @@ body > .cabecalho-locais {
 }
 
 .cabecalho-locais .barra-locais {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 
 .cabecalho-locais .titulo-campus {
-    font-family: var(--fonte-interface);
-    font-size: 2.8rem;
-    color: var(--cor-clara);
-    text-decoration: none;
+  font-family: var(--fonte-interface);
+  font-size: 2.8rem;
+  color: var(--cor-clara);
+  text-decoration: none;
 }
 
 .cabecalho-locais .navegacao-locais {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .cabecalho-locais .menu {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .cabecalho-locais .menu li {
-    margin: 0;
+  margin: 0;
 }
-
-.cabecalho-locais .chamada-locais {
-    max-width: 60rem;
-    margin: 7rem auto 2rem;
-    text-align: center;
-}
-
-.cabecalho-locais .chamada-locais h1 {
-    font-size: 3.4rem;
-    font-weight: normal;
-    color: var(--cor-clara);
-}
-
-
 
 .pagina-locais .titulo-pagina {
-    margin-bottom: 3rem;
-    text-align: center;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
 .pagina-locais .titulo-pagina > p:first-child {
-    margin-bottom: 1rem;
-    font-family: var(--fonte-interface);
-    font-size: var(--fs-menu);
-    font-weight: bold;
-    color: var(--cor-primaria);
+  margin-bottom: 1rem;
+  font-family: var(--fonte-interface);
+  font-size: var(--fs-menu);
+  font-weight: bold;
+  color: var(--cor-primaria);
 }
 
 .pagina-locais .titulo-pagina h2 {
-    margin-bottom: 1rem;
-    font-size: 3rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
 }
 
 .pagina-locais .titulo-pagina > p:last-child {
-    font-size: var(--fs-base);
+  font-size: var(--fs-base);
 }
 
 /* ESPACOS DO CAMPUS */
 
 .pagina-locais .local {
-    margin-bottom: 3rem;
-    padding-bottom: 3rem;
-    border-bottom: 1px solid var(--cor-cartao);
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--cor-cartao);
 }
 
 .pagina-locais .local:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 /* TITULOS E SUBTITULOS */
 
 .pagina-locais .local h3 {
-    margin-bottom: 0.5rem;
-    font-size: 2.6rem;
+  margin-bottom: 0.5rem;
+  font-size: 2.6rem;
 }
 
 .pagina-locais .local > p {
-    margin-bottom: 1.5rem;
-    font-size: var(--fs-base);
+  margin-bottom: 1.5rem;
+  font-size: var(--fs-base);
 }
 
 /* IMAGENS */
 
 .pagina-locais .local-imagem {
-    width: 100%;
-    height: 28rem;
-    margin-bottom: 1.5rem;
-    border-radius: 1rem;
-    object-fit: cover;
+  width: 100%;
+  height: 28rem;
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+  object-fit: cover;
 }
 
 /* BLOCOS DE INFORMACOES */
 
 .pagina-locais .local-informacoes {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 /* DESCRICAO */
 
 .pagina-locais .local-descricao {
-    padding: 2rem;
-    border-radius: 1rem;
-    color: var(--cor-clara);
-    background-color: var(--cor-primaria);
+  padding: 2rem;
+  border-radius: 1rem;
+  color: var(--cor-clara);
+  background-color: var(--cor-primaria);
 }
 
 .pagina-locais .local-descricao h4 {
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
 }
 
 /* INFORMACOES UTEIS */
 
 .pagina-locais .local-dados {
-    padding: 2rem;
-    border-radius: 1rem;
-    background-color: var(--cor-cartao);
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: var(--cor-cartao);
 }
 
 .pagina-locais .local-dados h4 {
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
 }
 
 .pagina-locais .local-dados p {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .pagina-locais .local-dados a {
-    display: inline-block;
-    margin-top: 1rem;
-    font-weight: bold;
-    color: var(--cor-primaria);
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: var(--cor-primaria);
 }
 
 .pagina-locais .local-dados a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
-
 /* --------------------------------------------------------- */
+
 /* PAGINA DETALHES */
 
 /* CABECALHO */
 
 body > .cabecalho-detalhes {
-    min-height: 38rem;
-    padding: 3rem 5%;
-    background-image:
-        linear-gradient(#00110999, #00110999),
-        url("../img/campos_backgroud.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  min-height: 38rem;
+  padding: 3rem 5%;
+  background-image:
+    linear-gradient(#00110999, #00110999), url("../img/campos_backgroud.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* LOGO A ESQUERDA E MENU A DIREITA */
 
 .cabecalho-detalhes .barra-detalhes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    width: 100%;
-    text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  text-align: left;
 }
 
 .cabecalho-detalhes .titulo-campus {
-    font-family: var(--fonte-interface);
-    font-size: 2.8rem;
-    color: var(--cor-clara);
-    text-decoration: none;
-    white-space: nowrap;
+  font-family: var(--fonte-interface);
+  font-size: 2.8rem;
+  color: var(--cor-clara);
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .cabecalho-detalhes .navegacao-detalhes {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .cabecalho-detalhes .navegacao-detalhes .menu {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .cabecalho-detalhes .navegacao-detalhes .menu li {
-    margin: 0;
+  margin: 0;
 }
 
 .cabecalho-detalhes .navegacao-detalhes .menu a {
-    font-family: var(--fonte-interface);
-    font-size: var(--fs-menu);
-    font-weight: bold;
-    color: var(--cor-clara);
-    text-decoration: none;
+  font-family: var(--fonte-interface);
+  font-size: var(--fs-menu);
+  font-weight: bold;
+  color: var(--cor-clara);
+  text-decoration: none;
 }
 
 .cabecalho-detalhes .navegacao-detalhes .menu a:hover,
 .cabecalho-detalhes .navegacao-detalhes .menu a:focus-visible,
 .cabecalho-detalhes .navegacao-detalhes .menu a[aria-current="page"] {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* TEXTO CENTRAL DO CABECALHO */
 
 .cabecalho-detalhes .chamada-detalhes {
-    max-width: 60rem;
-    margin: 7rem auto 2rem;
-    text-align: center;
-    color: var(--cor-clara);
+  max-width: 60rem;
+  margin: 7rem auto 2rem;
+  text-align: center;
+  color: var(--cor-clara);
 }
 
+/* AJUSTE 2: titulo de Detalhes no mesmo tamanho da Home (38px). */
 .chamada-detalhes h1 {
-    margin-bottom: 2rem;
-    font-size: 3.4rem;
-    font-weight: normal;
+  margin-bottom: 2rem;
+  font-size: 3.8rem;
+  font-weight: normal;
 }
 
+/* AJUSTE 3: subtitulo de Detalhes com o tamanho --fs-menu (14px). */
 .chamada-detalhes p {
-    font-family: var(--fonte-interface);
-    font-size: 1.5rem;
+  font-family: var(--fonte-interface);
+  font-size: var(--fs-menu);
 }
 
 /* CONTEUDO PRINCIPAL */
 
 body > .pagina-detalhes {
-    width: 100%;
-    max-width: none;
-    margin: 0 auto 2.4rem;
-    padding: 4rem 5%;
-    border-radius: 0 0 1.6rem 1.6rem;
-    background-color: #fff2e6;
-    color: var(--cor-texto);
+  width: 100%;
+  max-width: none;
+  margin: 0 auto 2.4rem;
+  padding: 4rem 5%;
+  border-radius: 0 0 1.6rem 1.6rem;
+  background-color: #fff2e6;
+  color: var(--cor-texto);
 }
 
 /* INTRODUCAO */
 
 .pagina-detalhes .introducao-detalhes {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 .pagina-detalhes .etiqueta-detalhes {
-    font-family: var(--fonte-interface);
-    font-size: var(--fs-pequeno);
-    font-weight: bold;
-    color: var(--cor-primaria);
+  font-family: var(--fonte-interface);
+  font-size: var(--fs-pequeno);
+  font-weight: bold;
+  color: var(--cor-primaria);
 }
 
 .pagina-detalhes .introducao-detalhes h2 {
-    margin-bottom: 1rem;
-    font-size: 3rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
 }
 
 .pagina-detalhes .voltar-detalhes {
-    display: inline-block;
-    margin-top: 1rem;
-    font-weight: bold;
-    color: var(--cor-primaria);
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: var(--cor-primaria);
 }
 
 /* ESPACOS DO CAMPUS */
 
 .pagina-detalhes .espaco-detalhes {
-    margin-bottom: 5rem;
-    padding-bottom: 4rem;
-    border-bottom: 1px solid var(--cor-cartao);
+  margin-bottom: 5rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid var(--cor-cartao);
 }
 
 .pagina-detalhes .cabecalho-espaco {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .pagina-detalhes .cabecalho-espaco h2 {
-    margin-bottom: 0.5rem;
-    font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  font-size: 2.8rem;
 }
 
 .pagina-detalhes .cabecalho-espaco p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .pagina-detalhes .categoria-espaco {
-    font-family: var(--fonte-interface);
-    font-size: var(--fs-pequeno);
-    font-weight: bold;
-    color: var(--cor-primaria);
+  font-family: var(--fonte-interface);
+  font-size: var(--fs-pequeno);
+  font-weight: bold;
+  color: var(--cor-primaria);
 }
 
 /* IMAGENS DOS ESPACOS */
 
 .pagina-detalhes .imagem-espaco {
-    width: 100%;
-    height: 28rem;
-    margin-bottom: 2rem;
-    border-radius: 1.2rem;
-    object-fit: cover;
+  width: 100%;
+  height: 28rem;
+  margin-bottom: 2rem;
+  border-radius: 1.2rem;
+  object-fit: cover;
 }
 
 /* CARTOES DE INFORMACOES */
 
 .pagina-detalhes .informacoes-espaco {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
 }
 
 .pagina-detalhes .cartao-detalhes {
-    overflow: hidden;
-    border-radius: 1.2rem;
-    background-color: var(--cor-cartao);
+  overflow: hidden;
+  border-radius: 1.2rem;
+  background-color: var(--cor-cartao);
 }
 
 .pagina-detalhes .cartao-detalhes h3 {
-    margin: 0;
-    padding: 1.5rem 2rem;
-    font-size: 2rem;
-    font-weight: normal;
-    color: var(--cor-clara);
-    background-color: var(--cor-primaria);
+  margin: 0;
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+  font-weight: normal;
+  color: var(--cor-clara);
+  background-color: var(--cor-primaria);
 }
 
 .pagina-detalhes .cartao-conteudo {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .pagina-detalhes .cartao-conteudo p {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .pagina-detalhes .cartao-conteudo ul {
-    padding-left: 2rem;
-    list-style: disc;
+  padding-left: 2rem;
+  list-style: disc;
 }
 
 .pagina-detalhes .cartao-conteudo li {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* ATIVIDADES DO CAMPUS */
 
 .pagina-detalhes .atividades-campus {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 .pagina-detalhes .cabecalho-atividades {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .pagina-detalhes .cabecalho-atividades h2 {
-    margin-bottom: 1rem;
-    font-size: 3rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
 }
 
 /* BANNER DE ATIVIDADES */
 
 .pagina-detalhes .banner-atividades {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 28rem;
-    margin-bottom: 3rem;
-    padding: 3rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    background-image:
-        linear-gradient(#00000088, #00000088),
-        url("../img/atividades.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28rem;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  background-image:
+    linear-gradient(#00000088, #00000088), url("../img/atividades.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .pagina-detalhes .banner-atividades h3 {
-    max-width: 75rem;
-    font-size: 3.6rem;
-    font-weight: normal;
-    color: var(--cor-clara);
+  max-width: 75rem;
+  font-size: 3.6rem;
+  font-weight: normal;
+  color: var(--cor-clara);
 }
 
 /* CARTOES DE ATIVIDADES */
 
 .pagina-detalhes .grade-atividades {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 2rem;
-    margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
 }
 
 .pagina-detalhes .atividade {
-    overflow: hidden;
-    border-radius: 1.2rem;
-    background-color: #f4ddd0;
+  overflow: hidden;
+  border-radius: 1.2rem;
+  background-color: #f4ddd0;
 }
 
 .pagina-detalhes .atividade h3 {
-    margin: 0;
-    padding: 1.2rem 1.5rem;
-    font-size: 2.2rem;
-    font-weight: normal;
-    color: var(--cor-clara);
-    background-color: var(--cor-primaria);
+  margin: 0;
+  padding: 1.2rem 1.5rem;
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: var(--cor-clara);
+  background-color: var(--cor-primaria);
 }
 
 .pagina-detalhes .atividade-conteudo {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 .pagina-detalhes .atividade-conteudo h4 {
-    margin-bottom: 1rem;
-    font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
 }
 
 .pagina-detalhes .atividade-conteudo p {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 /* ATIVIDADE EM DESTAQUE */
 
 .pagina-detalhes .atividade-destaque {
-    display: grid;
-    grid-template-columns: 45% minmax(0, 1fr);
-    overflow: hidden;
-    border-radius: 1.2rem;
-    background-color: var(--cor-cartao);
+  display: grid;
+  grid-template-columns: 45% minmax(0, 1fr);
+  overflow: hidden;
+  border-radius: 1.2rem;
+  background-color: var(--cor-cartao);
 }
 
 .pagina-detalhes .imagem-destaque {
-    position: relative;
-    min-height: 25rem;
+  position: relative;
+  min-height: 25rem;
 }
 
 .pagina-detalhes .imagem-destaque img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .pagina-detalhes .imagem-destaque h3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 90%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 2.8rem;
-    color: var(--cor-clara);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2.8rem;
+  color: var(--cor-clara);
 }
 
 .pagina-detalhes .conteudo-destaque {
-    padding: 3rem;
+  padding: 3rem;
 }
 
 .pagina-detalhes .conteudo-destaque h3 {
-    margin-bottom: 1.5rem;
-    font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.4rem;
 }
 
 /* TELAS MENORES */
 
 @media (max-width: 767px) {
-    .cabecalho-detalhes .barra-detalhes {
-        justify-content: space-between;
-        gap: 1.5rem;
-    }
+  .cabecalho-detalhes .barra-detalhes {
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
 
-    .cabecalho-detalhes .titulo-campus {
-        font-size: 2.2rem;
-    }
+  .cabecalho-detalhes .titulo-campus {
+    font-size: 2.2rem;
+  }
 
-    .cabecalho-detalhes .navegacao-detalhes {
-        margin-left: auto;
-    }
+  .cabecalho-detalhes .navegacao-detalhes {
+    margin-left: auto;
+  }
 
-    .cabecalho-detalhes .navegacao-detalhes .menu {
-        justify-content: flex-end;
-        gap: 1rem;
-    }
+  .cabecalho-detalhes .navegacao-detalhes .menu {
+    justify-content: flex-end;
+    gap: 1rem;
+  }
 
-    .cabecalho-detalhes .chamada-detalhes {
-        margin-top: 4rem;
-    }
+  .cabecalho-detalhes .chamada-detalhes {
+    margin-top: 4rem;
+  }
 
-    .chamada-detalhes h1 {
-        font-size: 2.8rem;
-    }
+  .chamada-detalhes h1 {
+    font-size: 2.8rem;
+  }
 
-    .pagina-detalhes .informacoes-espaco,
-    .pagina-detalhes .grade-atividades,
-    .pagina-detalhes .atividade-destaque {
-        grid-template-columns: 1fr;
-    }
+  .pagina-detalhes .informacoes-espaco,
+  .pagina-detalhes .grade-atividades,
+  .pagina-detalhes .atividade-destaque {
+    grid-template-columns: 1fr;
+  }
 
-    .pagina-detalhes .imagem-espaco {
-        height: 22rem;
-    }
+  .pagina-detalhes .imagem-espaco {
+    height: 22rem;
+  }
 
-    .pagina-detalhes .banner-atividades h3 {
-        font-size: 2.6rem;
-    }
+  .pagina-detalhes .banner-atividades h3 {
+    font-size: 2.6rem;
+  }
 
-    .pagina-detalhes .imagem-destaque {
-        height: 24rem;
-    }
+  .pagina-detalhes .imagem-destaque {
+    height: 24rem;
+  }
 }
 
 .cabecalho.cabecalho-integrantes {
-    min-height: 380px;
-    padding: 60px 70px 35px;
-    background-image:
-        linear-gradient(#00110999, #00110999),
-        url("../img/campos_backgroud.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  min-height: 380px;
+  padding: 60px 70px 35px;
+  background-image:
+    linear-gradient(#00110999, #00110999), url("../img/campos_backgroud.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .barra-integrantes {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .barra-integrantes .titulo-campus {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .barra-integrantes .menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
 }
 
 .barra-integrantes .menu li {
-    margin: 0;
+  margin: 0;
 }
 
 .chamada-integrantes {
-    margin: 70px auto 20px;
-    text-align: center;
+  margin: 70px auto 20px;
+  text-align: center;
 }
 
 .chamada-integrantes h1 {
-    margin-bottom: 25px;
-    font-size: 38px;
-    font-weight: normal;
-    line-height: 1.3;
+  margin-bottom: 25px;
+  font-size: 38px;
+  font-weight: normal;
+  line-height: 1.3;
 }
 
 .chamada-integrantes p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
 }
 
 main.pagina-integrantes {
-    padding: 40px;
-    border-radius: 0 0 16px 16px;
+  padding: 40px;
+  border-radius: 0 0 16px 16px;
 }
 
 .pagina-integrantes .titulo-pagina {
-    margin-bottom: 30px;
-    text-align: center;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .pagina-integrantes .etiqueta {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    color: #330509;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #330509;
 }
 
 .pagina-integrantes .titulo-pagina h2 {
-    margin-bottom: 15px;
-    font-size: 30px;
+  margin-bottom: 15px;
+  font-size: 30px;
 }
 
 .pagina-integrantes .integrantes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .pagina-integrantes .integrante {
-    width: 30%;
-    margin: 0;
-    padding: 24px;
-    text-align: center;
+  width: 30%;
+  margin: 0;
+  padding: 24px;
+  text-align: center;
 }
 
 .pagina-integrantes .integrante img {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 20px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .pagina-integrantes .integrante h3 {
-    margin-bottom: 15px;
-    font-size: 20px;
-    line-height: 1.3;
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 1.3;
 }
 
 .pagina-integrantes .integrante p {
-    margin-bottom: 8px;
-    font-size: 15px;
+  margin-bottom: 8px;
+  font-size: 15px;
 }
 
 .pagina-integrantes .integrante-links {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .pagina-integrantes .integrante-links a {
-    display: inline-block;
-    margin: 5px;
-    padding: 8px 15px;
-    border-radius: 20px;
-    background-color: #3305097f;
-    color: #ffffff;
-    font-size: 14px;
-    text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background-color: #3305097f;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .pagina-integrantes .integrante-links a:hover {
-    background-color: #4a0a0a;
-    text-decoration: underline;
+  background-color: #4a0a0a;
+  text-decoration: underline;
 }
 
 @media (max-width: 1000px) {
-    .pagina-integrantes .integrante {
-        width: 45%;
-    }
+  .pagina-integrantes .integrante {
+    width: 45%;
+  }
 }
 
 @media (max-width: 600px) {
-    .barra-integrantes {
-        flex-direction: column;
-    }
+  .barra-integrantes {
+    flex-direction: column;
+  }
 
-    .barra-integrantes .menu {
-        justify-content: center;
-        gap: 12px;
-    }
+  .barra-integrantes .menu {
+    justify-content: center;
+    gap: 12px;
+  }
 
-    .chamada-integrantes h1 {
-        font-size: 28px;
-    }
+  .chamada-integrantes h1 {
+    font-size: 28px;
+  }
 
-    main.pagina-integrantes {
-        padding: 25px 15px;
-    }
+  main.pagina-integrantes {
+    padding: 25px 15px;
+  }
 
-    .pagina-integrantes .integrante {
-        width: 100%;
-    }
+  .pagina-integrantes .integrante {
+    width: 100%;
+  }
 
-    .cabecalho.cabecalho-integrantes {
+  .cabecalho.cabecalho-integrantes {
     padding: 30px 20px;
-}
+  }
 }

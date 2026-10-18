@@ -1,4 +1,3 @@
-
 <!--
 INTEGRANTES DO GRUPO
 RM575133-GABRIELLY MACARIO DE SOUZA RIBEIRO
@@ -8,164 +7,185 @@ RM574510-SOFIA BALIEIRO YAMANE CARO
 RM575845-TAIANE MIRELLA SANTOS DE ALCÂNTARA
 -->
 
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conecta Campus | Locais</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <!-- CABECALHO -->
     <header class="cabecalho cabecalho-locais">
-        <div class="barra-locais">
-            <a class="titulo-campus" href="./index.html">
-                <strong>CONECTA</strong> campus
-            </a>
+      <div class="barra-locais">
+        <a class="titulo-campus" href="./index.html">
+          <strong>CONECTA</strong> campus
+        </a>
 
-            <nav class="navegacao-locais" aria-label="Navegação principal">
-                <ul class="menu">
-                    <li><a href="./index.html">Início</a></li>
-                    <li><a href="./detalhes.html">Detalhes</a></li>
-                    <li><a href="./integrantes.html">Integrantes</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navegacao-locais" aria-label="Navegação principal">
+          <ul class="menu">
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./detalhes.html">Detalhes</a></li>
+            <li><a href="./integrantes.html">Integrantes</a></li>
+          </ul>
+        </nav>
+      </div>
 
-        <div class="chamada-locais">
-            <h1>Descubra os espaços do seu campus!</h1>
-            <p>Conheça os ambientes disponíveis e encontre o espaço ideal para estudar, aprender e aproveitar sua experiência acadêmica.</p>
-        </div>
+      <div class="chamada-locais">
+        <h1>Descubra os espaços do seu campus!</h1>
+        <p>
+          Conheça os ambientes disponíveis e encontre o espaço ideal para
+          estudar, aprender e aproveitar sua experiência acadêmica.
+        </p>
+      </div>
     </header>
 
+    <!-- CONTEUDO PRINCIPAL -->
+    <main class="pagina-locais">
+      <section class="titulo-pagina" id="titulo-locais">
+        <p>ESPAÇOS DO CAMPUS</p>
+        <h2>Locais e serviços</h2>
+        <p>
+          Consulte alguns espaços e confira informações úteis para planejar sua
+          rotina.
+        </p>
+      </section>
 
-  <!-- CONTEUDO PRINCIPAL -->
-  <main class="pagina-locais">
+      <!-- BIBLIOTECA -->
+      <article class="local" id="biblioteca">
+        <h3>Biblioteca Central</h3>
+        <p>Um espaço para aprender, pesquisar e compartilhar conhecimento.</p>
 
-    <section class="titulo-pagina" id="titulo-locais">
-      <p>ESPAÇOS DO CAMPUS</p>
-      <h2>Locais e serviços</h2>
-      <p>Consulte alguns espaços e confira informações úteis para planejar sua rotina.</p>
-    </section>
+        <img
+          class="local-imagem"
+          src="./img/biblioteca.jpg"
+          alt="Interior da biblioteca com estantes de livros"
+        />
 
-    <!-- BIBLIOTECA -->
-    <article class="local" id="biblioteca">
-      <h3>Biblioteca Central</h3>
-      <p>Um espaço para aprender, pesquisar e compartilhar conhecimento.</p>
+        <div class="local-informacoes">
+          <div class="local-descricao">
+            <h4>Um espaço dedicado ao conhecimento!</h4>
+            <p>
+              A biblioteca oferece recursos para estudo, pesquisa e
+              desenvolvimento acadêmico.
+            </p>
+          </div>
 
-      <img
-        class="local-imagem"
-        src="./img/biblioteca.jpg"
-        alt="Interior da biblioteca com estantes de livros">
-
-      <div class="local-informacoes">
-        <div class="local-descricao">
-          <h4>Um espaço dedicado ao conhecimento!</h4>
-          <p>
-            A biblioteca oferece recursos para estudo,
-            pesquisa e desenvolvimento acadêmico.
-          </p>
+          <div class="local-dados">
+            <h4>Planeje sua visita</h4>
+            <p><strong>Categoria:</strong> Estudo e pesquisa</p>
+            <p><strong>Localização:</strong> Segundo andar, após o elevador</p>
+            <p><strong>Horário:</strong> 8h às 20h, de segunda a sexta-feira</p>
+            <p>
+              <strong>Informação útil:</strong> Para reservar livros e
+              materiais, é necessário possuir a carteirinha da biblioteca.
+            </p>
+            <a href="./detalhes.html#biblioteca">Ver detalhes da biblioteca</a>
+          </div>
         </div>
+      </article>
 
-        <div class="local-dados">
-          <h4>Planeje sua visita</h4>
-          <p><strong>Categoria:</strong> Estudo e pesquisa</p>
-          <p><strong>Localização:</strong> Segundo andar, após o elevador</p>
-          <p><strong>Horário:</strong> 8h às 20h, de segunda a sexta-feira</p>
-          <p><strong>Informação útil:</strong> Para reservar livros e materiais, é necessário possuir a carteirinha da biblioteca.</p>
-          <a href="./detalhes.html">Ver detalhes da biblioteca</a>
+      <!-- LABORATORIO -->
+      <article class="local" id="laboratorio">
+        <h3>Laboratório de Informática</h3>
+        <p>Um ambiente para tecnologia, aprendizado e aulas práticas.</p>
+
+        <img
+          class="local-imagem"
+          src="./img/laboratório_de_informática.jpg"
+          alt="Laboratório de informática com computadores"
+        />
+
+        <div class="local-informacoes">
+          <div class="local-descricao">
+            <h4>Um espaço para colocar o conhecimento em prática!</h4>
+            <p>
+              O laboratório disponibiliza computadores para aulas e atividades
+              acadêmicas.
+            </p>
+          </div>
+
+          <div class="local-dados">
+            <h4>Planeje sua visita</h4>
+            <p><strong>Categoria:</strong> Tecnologia e aulas práticas</p>
+            <p>
+              <strong>Localização:</strong> Consulte a sinalização do campus.
+            </p>
+            <p>
+              <strong>Informação útil:</strong> O uso depende da disponibilidade
+              do espaço e das aulas programadas.
+            </p>
+            <a href="./detalhes.html#laboratorio"
+              >Ver detalhes do laboratório.</a
+            >
+          </div>
         </div>
+      </article>
+
+      <!-- SALA DE CONVIVENCIA -->
+      <article class="local" id="sala-convivencia">
+        <h3>Sala de Convivência</h3>
+        <p>Um espaço para descanso, convivência e socialização.</p>
+
+        <img
+          class="local-imagem"
+          src="./img/sala_de_convivencia.jpg"
+          alt="Sala de convivência com mesas e cadeiras"
+        />
+
+        <div class="local-informacoes">
+          <div class="local-descricao">
+            <h4>Um ambiente para aproveitar os intervalos!</h4>
+            <p>
+              A sala de convivência oferece um espaço para descanso e interação
+              entre estudantes.
+            </p>
+          </div>
+
+          <div class="local-dados">
+            <h4>Planeje sua visita</h4>
+            <p><strong>Categoria:</strong> Lazer e socialização</p>
+            <p>
+              <strong>Localização:</strong> Consulte a sinalização do campus.
+            </p>
+            <p>
+              <strong>Informação útil:</strong> Respeite o ambiente e mantenha o
+              espaço limpo e organizado.
+            </p>
+            <a href="./detalhes.html#sala-convivencia"
+              >Ver detalhes da sala de convivência.</a
+            >
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!-- RODAPE -->
+
+    <footer class="rodape">
+      <div class="rodape-container">
+        <a class="titulo-campus">
+          <strong>CONECTA</strong>
+          <span>campus</span>
+        </a>
+
+        <p class="rodape-descricao">
+          Explore espaços, descubra recursos e viva experiências além da sala de
+          aula.
+        </p>
+
+        <nav aria-label="Links do rodapé">
+          <ul class="rodape-links">
+            <li><a href="./detalhes.html">Buscar Eventos</a></li>
+            <li><a href="./locais.html">Explorar biblioteca</a></li>
+            <li><a href="./detalhes.html">Ir para atividades</a></li>
+            <li><a href="./locais.html">Conhecer Laboratórios</a></li>
+          </ul>
+        </nav>
+
+        <p class="rodape-copyright">© 2026 Conecta Campus</p>
       </div>
-    </article>
-
-    <!-- LABORATORIO -->
-    <article class="local" id="laboratorio">
-      <h3>Laboratório de Informática</h3>
-      <p>Um ambiente para tecnologia, aprendizado e aulas práticas.</p>
-
-      <img
-        class="local-imagem"
-        src="./img/laboratório_de_informática.jpg"
-        alt="Laboratório de informática com computadores">
-
-      <div class="local-informacoes">
-        <div class="local-descricao">
-          <h4>Um espaço para colocar o conhecimento em prática!</h4>
-          <p>
-            O laboratório disponibiliza computadores
-            para aulas e atividades acadêmicas.
-          </p>
-        </div>
-
-        <div class="local-dados">
-          <h4>Planeje sua visita</h4>
-          <p><strong>Categoria:</strong> Tecnologia e aulas práticas</p>
-          <p><strong>Localização:</strong> Consulte a sinalização do campus.</p>
-          <p><strong>Informação útil:</strong> O uso depende da disponibilidade do espaço e das aulas programadas.</p>
-          <a href="./detalhes.html">Ver detalhes do laboratório.</a>
-        </div>
-      </div>
-    </article>
-
-    <!-- SALA DE CONVIVENCIA -->
-    <article class="local" id="sala-convivencia">
-      <h3>Sala de Convivência</h3>
-      <p>Um espaço para descanso, convivência e socialização.</p>
-
-      <img
-        class="local-imagem"
-        src="./img/sala_de_convivencia.jpg"
-        alt="Sala de convivência com mesas e cadeiras">
-
-      <div class="local-informacoes">
-        <div class="local-descricao">
-          <h4>Um ambiente para aproveitar os intervalos!</h4>
-          <p>
-            A sala de convivência oferece um espaço
-            para descanso e interação entre estudantes.
-          </p>
-        </div>
-
-        <div class="local-dados">
-          <h4>Planeje sua visita</h4>
-          <p><strong>Categoria:</strong> Lazer e socialização</p>
-          <p><strong>Localização:</strong> Consulte a sinalização do campus.</p>
-          <p><strong>Informação útil:</strong> Respeite o ambiente e mantenha o espaço limpo e organizado.</p>
-          <a href="./detalhes.html">Ver detalhes da sala de convivência.</a>
-        </div>
-      </div>
-    </article>
-
-  </main>
-
-  <!-- RODAPE -->
-  <footer class="rodape">
-    <div class="rodape-container">
-      <a class="rodape-logo" href="./index.html">
-        <strong>CONECTA</strong>
-        <span>campus</span>
-      </a>
-
-      <p class="rodape-descricao">
-        Explore espaços, descubra recursos e viva experiências
-        além da sala de aula.
-      </p>
-
-      <nav aria-label="Links do rodapé">
-        <ul class="rodape-links">
-          <li><a href="./index.html">Início</a></li>
-          <li><a href="./locais.html">Conhecer locais</a></li>
-          <li><a href="./detalhes.html">Explorar biblioteca</a></li>
-          <li><a href="./integrantes.html">Integrantes</a></li>
-        </ul>
-      </nav>
-
-      <p class="rodape-copyright">© 2026 Conecta Campus</p>
-    </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>
