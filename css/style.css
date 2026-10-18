@@ -199,7 +199,14 @@ summary:focus-visible {
   background-color: var(--cor-moldura);
 }
 
+
+/* --------------------------------------------------------------------------------------------------
+ */
+
+
+/* ESTILOS COMPARTILHADOS: logo e navegacao da Home, Locais e Detalhes. */
 /* MENU */
+
 .barra-home {
   display: flex;
   justify-content: space-between;
@@ -453,6 +460,8 @@ article section {
   background-color: #2a3d31;
 }
 
+/* ------------------------------------------------------------------------------------------- */
+/* ESTRUTURA COMPARTILHADA: estilos aplicados aos elementos diretos do body. */
 /* Estrutura das páginas */
 
 /* Conteúdo principal */
@@ -556,8 +565,6 @@ body > .cabecalho-home {
   border-radius: 12px;
 }
 
-/* Apresentação do Conecta Campus */
-
 .sobre h2 {
   font-size: 28px;
   font-weight: normal;
@@ -565,12 +572,12 @@ body > .cabecalho-home {
   font-weight: normal;
 }
 
+/* Benefícios */
 .coluna-beneficios {
   border-left: 1px solid #ffffff;
   padding-left: 30px;
 }
 
-/* Benefícios */
 .beneficios {
   margin-top: 24px;
 }
@@ -638,11 +645,10 @@ body > .rodape {
 
 
 
-/* --------------------------------------------------------- */
+
 /* PAGINA LOCAIS */
 
 /* INTRODUCAO */
-
 
 /* CABECALHO DA PAGINA LOCAIS */
 
@@ -656,7 +662,6 @@ body > .cabecalho-locais {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 
 .chamada-locais {
   max-width: 550px;
@@ -707,20 +712,6 @@ body > .cabecalho-locais {
 .cabecalho-locais .menu li {
     margin: 0;
 }
-
-.cabecalho-locais .chamada-locais {
-    max-width: 60rem;
-    margin: 7rem auto 2rem;
-    text-align: center;
-}
-
-.cabecalho-locais .chamada-locais h1 {
-    font-size: 3.4rem;
-    font-weight: normal;
-    color: var(--cor-clara);
-}
-
-
 
 .pagina-locais .titulo-pagina {
     margin-bottom: 3rem;
@@ -830,9 +821,8 @@ body > .cabecalho-locais {
     text-decoration: underline;
 }
 
-
-
 /* --------------------------------------------------------- */
+
 /* PAGINA DETALHES */
 
 /* CABECALHO */
@@ -910,15 +900,17 @@ body > .cabecalho-detalhes {
     color: var(--cor-clara);
 }
 
+/* AJUSTE 2: titulo de Detalhes no mesmo tamanho da Home (38px). */
 .chamada-detalhes h1 {
     margin-bottom: 2rem;
-    font-size: 3.4rem;
+    font-size: 3.8rem;
     font-weight: normal;
 }
 
+/* AJUSTE 3: subtitulo de Detalhes com o tamanho --fs-menu (14px). */
 .chamada-detalhes p {
     font-family: var(--fonte-interface);
-    font-size: 1.5rem;
+    font-size: var(--fs-menu);
 }
 
 /* CONTEUDO PRINCIPAL */
